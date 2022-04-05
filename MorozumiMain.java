@@ -7,7 +7,8 @@ public class MorozumiMain{
 		int height = new Scanner(System.in).nextInt();
 		//幅と高さを入力してもらう
 
-		char [][]natures = {
+		int [][] map = new int [height][width];
+		char [][] natures = {
 			{'森'},
 			{'草'},
 			{'岩'},
@@ -15,8 +16,8 @@ public class MorozumiMain{
 		};
 		for(int i = 0; i<height; i++ ){
 			for(int j = 0; j<width; j++){
-				int r = new Random().nextInt(4);
-				System.out.printf("%s",natures[r][0]);
+				map[i][j] = new Random().nextInt(4);
+				System.out.printf("%s",natures[map[i][j]][0]);
 			}
 			System.out.println();
 		}
