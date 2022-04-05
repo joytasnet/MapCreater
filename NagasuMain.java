@@ -11,7 +11,7 @@ public class NagasuMain{
 
 		for(int i=0;i<map.length;i++){
 			for(int j=0;j<map[i].length;j++){
-				int itemno = new Random().nextInt(4);
+				int itemno = new Random().nextInt(items.length);
 				map[i][j] = items[itemno];
 				System.out.print(map[i][j]);
 			}
