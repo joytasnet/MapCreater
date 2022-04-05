@@ -9,7 +9,7 @@ public class NaganoMain{
 		char[] maps2 ={'森','草','岩','水'};
 		for(int i = 0;i<maps.length;i++){
 			for(int j =0;j<maps[i].length;j++){
-				int r =new Random().nextInt(4);
+				int r =new Random().nextInt(maps2.length);
 				maps[i][j]=maps2[r];
 				System.out.print(maps[i][j]);
 			}
