@@ -9,7 +9,7 @@ public class MatsuokaMain{
 		char mapname[]={'森','草','岩','水'};
 		for(int i=0;i<high;i++){
 			for(int j=0;j<width;j++){
-				int randommap=new Random().nextInt(3);
+				int randommap=new Random().nextInt(4);
 				System.out.printf("%s",mapname[randommap]);
 			}
 			System.out.println();
